@@ -11,8 +11,12 @@
     2. Create a css file
     3. Add showSignUp method to render the signup page once a request comes to
        /showSignUp in app.py.
-   -  Implement a Signup method
+   - Implement a Signup method
     1. Implement a signUp method in app.py for the UI to interact with the MySQL
        database, using jQuery AJAX to post our signup data to the signUp method,
        and import request from Flask.
     2. Import json from Flask, since we want to return json data.
+   - Create a Signup request
+    1. Download and place jQuery inside PythonApp/static/js and add a link to it
+       from the signup page.
+    2. Add a jQuery POST request when the user clicks the Sign Up button.
