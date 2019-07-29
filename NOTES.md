@@ -16,7 +16,8 @@
        database, using jQuery AJAX to post our signup data to the signUp method,
        and import request from Flask.
     2. Import json from Flask, since we want to return json data.
-   - Create a Signup request
+4. Create a Signup request
     1. Download and place jQuery inside PythonApp/static/js and add a link to it
        from the signup page.
     2. Add a jQuery POST request when the user clicks the Sign Up button.
+5. Call the MySQL Stored Procedure
