@@ -21,3 +21,6 @@
        from the signup page.
     2. Add a jQuery POST request when the user clicks the Sign Up button.
 5. Call the MySQL Stored Procedure
+6. Creating the Sign-In interface
+   - Create signin.html file
+   - Add a new route for the sign-in interface
