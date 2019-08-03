@@ -24,3 +24,6 @@
 6. Creating the Sign-In interface
    - Create signin.html file
    - Add a new route for the sign-in interface
+7. Implement Signin
+   - Create Stored Procedure in MySQL
+   - Validate the User Method
