@@ -27,3 +27,5 @@
 7. Implement Signin
    - Create Stored Procedure in MySQL
    - Validate the User Method
+   - Create a userHome.html file
+   - Create an error.html file
