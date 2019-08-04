@@ -1,4 +1,4 @@
-from flask import Flask, render_template, json, request
+from flask import Flask, render_template, json, request, session
 from flaskext.mysql import MySQL
 from werkzeug import generate_password_hash, check_password_hash
 from contextlib import closing
@@ -7,10 +7,10 @@ app = Flask(__name__)
 mysql = MySQL()
 
 
-app.config['MYSQL_DATABASE_USER'] = 'x'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'x'
-app.config['MYSQL_DATABASE_DB'] = 'x'
-app.config['MYSQL_DATABASE_HOST'] = 'x'
+app.config['MYSQL_DATABASE_USER'] = 'karuna'
+app.config['MYSQL_DATABASE_PASSWORD'] = 'karuna'
+app.config['MYSQL_DATABASE_DB'] = 'Bucketlist'
+app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql.init_app(app)
 
 @app.route('/')
