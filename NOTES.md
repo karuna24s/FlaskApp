@@ -29,3 +29,4 @@
    - Validate the User Method
    - Create a userHome.html file
    - Create an error.html file
+   - Restricting Unauthorized Access to the User Home Page
