@@ -5,6 +5,7 @@ from contextlib import closing
 
 app = Flask(__name__)
 mysql = MySQL()
+app.secret_key = 'why would I tell you my secret key?'
 
 
 app.config['MYSQL_DATABASE_USER'] = 'karuna'
@@ -27,11 +28,17 @@ def showSignUp():
 
 @app.route('/showSignin')
 def showSignin():
-    return render_template('signin.html')
+    if session.get('user'):
+        return render_template('userHome.html')
+    else:
+        return render_template('signin.html')
 
 @app.route('/userHome')
 def userHome():
-    return render_template('userHome.html')
+    if session.get('user'):
+        return render_template('userHome.html')
+    else:
+        return render_template('error.html',error = 'Unauthorized Access')
 
 @app.route('/validateLogin',methods=['POST'])
 def validateLogin():
