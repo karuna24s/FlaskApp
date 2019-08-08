@@ -30,3 +30,4 @@
    - Create a userHome.html file
    - Create an error.html file
    - Restricting Unauthorized Access to the User Home Page
+8. Implement Logout functionality
