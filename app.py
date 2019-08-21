@@ -40,6 +40,10 @@ def userHome():
     else:
         return render_template('error.html',error = 'Unauthorized Access')
 
+@app.route('/showAddWish')
+def showAddWish():
+    return render_template('addWish.html')
+
 @app.route('/logout')
 def logout():
     session.pop('user',None)
